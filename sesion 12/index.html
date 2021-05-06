@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <h2>Ecuesta de Cine: Nominados al Oscar</h2>
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset id="datos personales">
+                <legend>DATOS PERSONALES</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" id="dni" maxlength="9"><br>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" maxlength="2"><br>
+                <label for="sexo">Sexo:</label>
+                <p>
+                    Género:
+                    <select name="genero">
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                    </select>
+                </p>
+ 
+            </fieldset>
+            <fieldset id="mejor pelicula">
+                <legend>MEJOR PELICULA</legend>
+                <input type="radio" name="pelicula" value="11">Pelicula 01<br>
+                <input type="radio" name="pelicula" value="22">Pelicula 02<br>
+                <input type="radio" name="pelicula" value="33">Pelicula 03<br>
+            </fieldset>
+            <fieldset>
+                <legend>Semecciona las peliculas que no hayas visto</legend>
+                <input type="checkbox" name="pelicula">Pelicula 01<br>
+                <input type="checkbox" name="pelicula">Pelicula 02<br>
+                <input type="checkbox" name="pelicula">Pelicula 03<br>
+                <input type="checkbox" name="pelicula">Pelicula 04<br>
+                <input type="checkbox" name="pelicula">5<br>
+            </fieldset>
+            <fieldset>
+                <legend>Argumento de la película que más te gusto:</legend>
+                <textarea name="argumento"></textarea>
+            </fieldset>
+
+            <input type="reset" value="Borrar Formulario">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

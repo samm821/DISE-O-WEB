@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO OSCAR´S</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="estiloForm.css" type="text/css">
+</head>
+<body>
+    <div id="divTitulo">
+        <h2><img src="img/oscar.png" alt="oscar">Encuesta de Cine: Nominados al Oscar<img src="img/oscar.png" alt="oscar"></h2>
+    </div>
+    <div id="divContenedor">
+        <form id="formulario1" name="formulario1" method="post" action="data.php">
+            <fieldset id="fldDatos">
+                <legend id="lgdDatos">DATOS PERSONALES</legend>
+                <label id="lblNombre" for="inpNombre">Nombre:</label>
+                <input type="text" name="nombre" id="inpNombre"><br>
+                <label id="lblDni" for="inpDni">DNI:</label>
+                <input type="text" name="dni" id="inpDni" maxlength="9"><br>
+                <label id="lblEdad" for="inpEdad">Edad:</label>
+                <input type="number" name="edad" id="inpEdad" maxlength="2" value="0"><br>
+                <label id="lblSexo" for="cboSexo">Sexo:</label>
+                <select id="cboSexo" >
+                    <option id="cboFem">Femenino</option>
+                    <option id="cboMasc">Masculino</option>
+                </select>
+            </fieldset>
+            <fieldset id="fldMejorPelicula">
+                <legend id="lgdMejorPelicula">MEJOR PELICULA</legend>
+                <input id="radPeli1" type="radio" name="pelicula" value="11" checked>Call Me By Your Name<br>
+                <input id="radPeli2" type="radio" name="pelicula" value="22">Dunkerque<br>
+                <input id="radPeli3" type="radio" name="pelicula" value="33">Lady Bird<br>
+            </fieldset>
+            <fieldset id="fldPeliculasVistas">
+                <legend id="lgdPeliculasVistas">PELICULAS VISTAS</legend>
+                <input id="chkPeli1" type="checkbox" name="pelicula">Space Jam: a New Legacy<br>
+                <input id="chkPeli2" type="checkbox" name="pelicula">Venom: Let There Be Carnage<br>
+                <input id="chkPeli3" type="checkbox" name="pelicula">The Forever Purge<br>
+                <input id="chkPeli4" type="checkbox" name="pelicula">Spider-Man: No Way Home<br>
+                <input id="chkPeli5" type="checkbox" name="pelicula">The Women in the Window<br>
+            </fieldset>
+            <fieldset id="fldArgumento">
+                <legend id="lgdArgumento">¿CUAL PELICULA ES TU FAVORITA?¿POR QUE?</legend>
+                <textarea id="txtArgumento" name="argumento"  cols="80" rows="5"></textarea>
+            </fieldset>
+            <div id="divBotones">
+                <input id="btnBorrar" type="reset" value="Borrar Formulario">
+                <input id="btnEnviar" type="submit" value="Enviar">
+            </div>
+            </form>
+    </div>
+    
+</body>
+</html>
