@@ -68,6 +68,6 @@ body {
     color: black;
 }
 
-txtArgumento{
-    width: 99%;
+#txtArgumento{
+    width: 100%;
 }
