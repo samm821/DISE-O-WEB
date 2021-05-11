@@ -1,0 +1,21 @@
+#caja{
+    border: 1px solid;
+}
+
+#articulo{
+    background-color: greenyellow;
+    height: 340px;
+}
+
+#imagenNoticia{
+    float: right;
+}
+
+#datos{
+    background-color: lightblue;
+    width: fit-content;
+    position: relative;
+    left: 79.5%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}

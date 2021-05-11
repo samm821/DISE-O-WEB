@@ -1,0 +1,25 @@
+#rppIcono{
+    width: 9%;
+    height: 9%;
+    float: left;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    vertical-align:middle;
+    height: 50%;
+    
+}
+
+header h1{
+       
+        margin: 3%;
+}
+
+#divTitulo{
+    top: 9%;
+}

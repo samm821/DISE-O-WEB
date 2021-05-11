@@ -1,0 +1,55 @@
+.tamaño{
+    height: 60px;
+    width: 100px;
+}
+
+#caja1{
+    background-color: royalblue;
+    height: 1660px;
+}
+
+#caja2{
+    background-color: blueviolet;
+    /* float: left; */
+    float: right;
+}
+
+/* #caja3{
+   background-color: gold; 
+   position: static;
+   /* no permite mover el elemento 
+    top: -60px;
+   left: 100px;
+} */
+
+/* #caja3{
+    background-color: gold; 
+    /* no permite usar el espacio que deja el elemento movido 
+    y las indicaciones son en relacion al contenedor donde se encuentra
+    el elemento a mover
+    position: relative;
+    top: -60px;
+    left: 100px; 
+ } */
+
+ #caja3{
+    background-color: gold; 
+/*     position: absolute; 
+    /* permite usar el espacio que deja el elemento movido 
+    y las indicaciones son en relacion de la ventana
+    top: 60px; 
+    left: 100px;  */
+    float: left;
+ }
+
+#caja4{
+   background-color: chartreuse; 
+   /* position: fixed;
+   /* variante de absolute que ancla el elemento en el lugar
+   en relacion a la ventana general 
+   top: 60px;
+   left: 200px;   
+   float: left;*/
+   float: right;
+}
+
