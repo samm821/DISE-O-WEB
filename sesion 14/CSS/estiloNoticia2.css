@@ -1,25 +1,42 @@
 #rppIcono{
     width: 9%;
     height: 9%;
-    float: left;
 }
 
-header{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+#header{
+    position: sticky;
+    width:100%;
+    border: 1px solid;
     background-color: white;
-    vertical-align:middle;
-    height: 50%;
-    
 }
 
-header h1{
-       
-        margin: 3%;
+#header h2{ 
+    margin: 4%;
+    float:left; 
 }
 
-#divTitulo{
-    top: 9%;
+#articulo #titulo{
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+#articulo #imagenNoticia {
+   float: left;
+   width: 50%;
+   height: 50%;  
+}
+
+#articulo p{
+    text-justify:distribute-all-lines;
+    width: 99%;
+}
+
+#datos{
+    position: relative;
+    left: 28%;
+}
+
+body{
+    background-color:aquamarine;
 }
