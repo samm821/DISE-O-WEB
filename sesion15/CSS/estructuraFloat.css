@@ -1,0 +1,70 @@
+/* header{
+    background-color: blueviolet;
+    height: 150px;
+}
+
+nav{
+    background-color: cornflowerblue;
+    width: 25%;
+}
+
+section{
+    background-color: indigo;
+    width: 50%;
+}
+
+aside{
+    background-color: darkmagenta;
+    width: 25%;
+}
+
+footer{
+    background-color: darkorchid;
+    clear: left;
+    height: 100px;
+}
+
+nav, section, aside{
+    float: left;
+    height: 350px;
+} */
+body{
+    margin: 0px;
+}
+#contenedor{
+    display: grid;
+    margin: 0px auto;
+    max-width: 70%;
+    max-height: ;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header" 
+    "nav section aside" 
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+
+nav{
+    grid-area: nav;
+    background-color: cornflowerblue;
+}
+
+section{
+    grid-area: section;
+    background-color: indigo;
+}
+
+aside{
+    grid-area: aside;
+    background-color: darkmagenta;
+}
+
+footer{
+    grid-area: footer;
+    background-color: darkorchid;
+}

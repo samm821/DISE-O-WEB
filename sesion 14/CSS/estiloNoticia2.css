@@ -25,16 +25,19 @@
    float: left;
    width: 50%;
    height: 50%;  
+   margin-bottom: 1%;
+   margin-right: 1%;
 }
 
 #articulo p{
-    text-justify:distribute-all-lines;
+    text-align: justify;
     width: 99%;
+
 }
 
 #datos{
     position: relative;
-    left: 28%;
+    left: 78%;
 }
 
 body{
