@@ -34,8 +34,8 @@ body{
 #contenedor{
     display: grid;
     margin: 0px auto;
-    max-width: 70%;
-    max-height: ;
+    max-width: 100%;
+    min-height: 100vh;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 2fr 4fr 1fr;
     grid-template-areas: 
