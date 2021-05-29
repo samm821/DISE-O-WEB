@@ -1,0 +1,14 @@
+/* #cajamenu{
+    border: 3px solid forestgreen; 
+    background-color: darkcyan; 
+    width: 10%;
+}
+
+ul{
+    list-style: none;
+    padding: 0%;
+} */
+
+#div1 { color:blue; }
+#div2 { overflow:scroll;color:white;background-color:black;height:200px;width:220px;margin-top:20px; }
+#log { color:yellow;background-color:red;margin-top:20px; }
