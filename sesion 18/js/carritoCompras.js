@@ -13,9 +13,6 @@ function agregarProducto(id, nombre, precio, imagen) {
             var repetido=false;
             for (var i=0; i<localStorage.length; i++){
                 var key = localStorage.key(i);
-                alert('i='+i);
-                alert('key='+key);
-                alert('id='+id)  ;
                 if(key ===id){
                     repetido=true;
                 }
@@ -26,7 +23,6 @@ function agregarProducto(id, nombre, precio, imagen) {
                 datos.cantidad +=1;
                 localStorage.setItem(id, JSON.stringify(datos) );
               }  else{
-                  alert('cantidad'+datos.cantidad)
                   localStorage.setItem(id, JSON.stringify(datos)); 
               }     
         }
