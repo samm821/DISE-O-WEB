@@ -1,0 +1,15 @@
+div:hover{
+    background-color: coral;
+}
+
+a:hover{
+    color: blue;
+}
+
+a:focus{
+    color: forestgreen;
+}
+
+a:active{
+    color: darkorchid;
+}
