@@ -1,0 +1,28 @@
+#contenedor {
+    max-width: 100%;
+    min-height: 600vh;
+}
+
+#contenedor *{
+    border: 1px solid violet;
+}
+
+header{
+    background-color: teal;
+}
+
+nav {
+    background-color: saddlebrown;
+}
+
+aside{
+    background-color: sandybrown;
+}
+
+section{
+    background-color: steelblue;
+}
+
+footer{
+    background-color: lightskyblue;
+}

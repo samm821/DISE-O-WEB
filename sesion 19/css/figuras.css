@@ -60,3 +60,17 @@
     clip-path: polygon(0% 20%, 25% 0, 75% 0, 100% 20%,50% 100%);
     background-color: violet;
 }
+
+.animado{
+    width: 50%;
+    transition: all 1s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.animado:hover{
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+@keyframes identifier {
+    
+}

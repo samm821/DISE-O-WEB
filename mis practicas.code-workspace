@@ -1,8 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "DISE-O-WEB",
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DISE-O-WEB"
+	}
 }

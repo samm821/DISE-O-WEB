@@ -1,0 +1,10 @@
+#contenedor{
+    background-color: rgb(224, 227, 230);
+    margin: 5%;
+}
+
+div [class^=col]{
+    border: 0.001px gray solid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
