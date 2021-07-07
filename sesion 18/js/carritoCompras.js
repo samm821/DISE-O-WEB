@@ -50,13 +50,17 @@ function actualizarDatos() {
                 var key = localStorage.key(i);
                 var datos = localStorage.getItem(key);
                 datos = JSON.parse(datos);
- 
-                fila +='<tr><td> <img src="'+datos.imagen+'" alt="producto"></td>'+
+
+                fila +='<tr id="producto'+key+'"><td> <img src="'+datos.imagen+'" alt="producto"></td>'+
                         '<td>'+datos.nombre+'</td>'+
                         '<td>'+datos.precio+'</td>'+
-                        '<td> <input type="number" value="'+datos.cantidad+'" class="cantidad"></td>'+
-                        '<td><button><img src="/sesion 18/img/eliminar.png" alt="eliminar" onclick="eliminarDatos('+
-                        (key)+')"></button></td>';          
+                        '<td class="productosCarrito"> <div>'+
+                        '<button class="btnspinner" onclick="spinnerMenos('+key+')">-</button>'+
+                        '<div>'+datos.cantidad+'</div>'+
+                        '<button class="btnspinner" onclick="spinnerMás('+key+')">+</button>'+
+                        '</div></td><td><button>'+
+                        '<img src="/sesion 18/img/eliminar.png" alt="eliminar" onclick="eliminarDatos('+key+')">'+
+                        '</button></td></tr>';        
             }
         }
     document.getElementById("agregados").innerHTML=fila;
@@ -77,46 +81,27 @@ function calcularTotal() {
     document.getElementById("total").innerHTML=total;
 }
 
-function llenarMenu() {
-    const productos =[{
-        'nombre': 'frappe de Mocca',
-        'precio': '16.50',
-    },
-    {
-        'nombre': 'frappe de Vainilla',
-        'precio': '14.50',
-    },
-    {
-        'nombre': 'affogato',
-        'precio': '10.50',
-    },
-    {
-        'nombre': 'Té Helado',
-        'precio': '11.50',
-    },
-    {
-        'nombre': 'frappe de Maracuyá',
-        'precio': '19.50',
-    },
-    {
-        'nombre': 'frappe de Oreo',
-        'precio': '15.50',
-    }
-    ];
+function spinnerMás(id) {                      
+    var producto=localStorage.getItem(id);
+    datos = JSON.parse(producto);
 
-    var menu="";
+    datos.cantidad +=1;
 
-    for(var i=0; i<productos.length; i++){
-        alert(i);
-        menu+='<div class="productos" id="p'+i+'">'+
-        '<img src="/sesion 18/img/'+(i+1)+'.png" alt="producto"><br>'+
-        '<span id="nombre'+i+'">'+productos[i].nombre+'</span><br>'+
-        '<span id="precio'+i+'">'+productos[i].precio+'</span><br>'+
-        '<button onclick="agregarProducto("'+i+'","'+productos[i].nombre+'","'+productos[i].precio+
-        '","/sesion 18/img/'+(i+1)+'.png")">agregar al carrito</button></div>';
-        alert(productos[i].nombre+'  '+productos[i].precio);
-    }
-    document.getElementById("menu").innerHTML=menu;
+    localStorage.setItem(id, JSON.stringify(datos) );    
+
     actualizarDatos();
+    calcularTotal(); 
+}
+
+function spinnerMenos(id) {
+    var producto=localStorage.getItem(id);
+    datos = JSON.parse(producto);
+
+    datos.cantidad -=1;
+    
+    localStorage.setItem(id, JSON.stringify(datos) );    
+
+    actualizarDatos();
+    calcularTotal();
 }
 

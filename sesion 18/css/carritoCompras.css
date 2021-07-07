@@ -42,8 +42,8 @@ button{
 }
 
 table img{
-    width: 32px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
 }
 
 table input{
@@ -60,4 +60,29 @@ table{
 table tfoot{
     border-top: 2px solid black;
     text-align: center;
+}
+
+.btnspinner{
+    width: 15px;
+    font-weight: bold;
+}
+
+.productosCarrito div{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.productosCarrito div div{
+    background-color: white; 
+    width: 30px;
+}
+
+tbody button{
+    border: none;
+}
+
+button img{
+    width: 80%;
+    height: 80%;
 }
